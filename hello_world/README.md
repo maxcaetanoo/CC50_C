@@ -20,7 +20,7 @@ Veja abaixo:
 ***terminal***
 
     # Compilando o arquivo
-    make ./hello
+    make hello
 
     # Executando o arquivo compilado(binário) e já compreensivel para o computador
     ./hello
