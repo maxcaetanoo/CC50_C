@@ -32,3 +32,29 @@ Para adcionarmos tipos de variaveis diferentes em um print precisamos especifica
 * **%i** Adciona um int a um printf.
 * **%li** Adciona um long a um printf.
 * **%s** Adciona uma string a um printf.
+
+## Casting
+
+O processo de casting serve para forçar a alteração de um tipo para outro, podemos dar como exemplo uma divisão de dois inteiro onte teriamos um problema como podemos ver abaixo:
+
+**Ex:**
+
+    // Aqui estamos recebendo dois números inteiros do usuário
+    int x = get_int("X: ");
+    int y = get_int("Y: ");
+
+    // E aqui estamos dividindo x por y, mas temos um problema
+    float z = x / y;
+
+lembrando que sempre executamos da direita para a esquerda da virgula e com isso temos um problema pois os números da direita são inteiros logo estaremos recebendo o resultado da divisão em inteiro e só depois atribuiremos à variavel z que é um ponto flutuante, mas nesse processo perdemos todos os valores após o ponto.
+Agora você deve estar se perguntando se deveriamos mudar o **x** e o **y** para *float* para que possamos solucionar esse problema, mas na verdade a solução é mais simples, podemos apenas usar um ***cast*** para converter para float as variaveis x e y como pode ser visto abaixo:
+
+**Ex:**
+
+    // Aqui estamos recebendo dois números inteiros do usuário
+    int x = get_int("X: ");
+    int y = get_int("Y: ");
+
+    // E aqui estamos dividindo x por y
+    // mas dessa vez usamos o cast para ajustar o problema.
+    float z = (float) x / (float) y;
