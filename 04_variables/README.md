@@ -58,3 +58,33 @@ Agora você deve estar se perguntando se deveriamos mudar o **x** e o **y** para
     // E aqui estamos dividindo x por y
     // mas dessa vez usamos o cast para ajustar o problema.
     float z = (float) x / (float) y;
+
+## Increments
+
+Os incrementos em **C** são uma forma de fazer a adição de um valor a uma variavel e em seguida reatribuir o valor já somado novamente à variável, podemos ver um pouco melhor como isso funciona logo abaixo.
+
+**Ex1:**
+
+    //Essa é a variavel
+    int number = 0;
+
+    //Esse é o modelo base de um incremento
+    number = number + 1;
+
+Como podemos ver nesse exemplo acima lembrando como funciona a lingaugem **C** temos uma variavel **number** à direita do sinal de atribuição **'='** e essa variavel é somada ao valor **1**, logo em seguida é atribuída a soma à variável **number**.
+Mas podemos fazer a mesma coisa de uma forma muito mais simples, que é igual ao exemplo abaixo.
+
+**Ex2:**
+
+    //Esse é o modelo mais simples de incremento
+    number += 1;
+
+Esse modelo tem exatamente o mesmo resultado do modelo do *Ex1*, mas de uma forma muito mais enxuta e sem necessidade de muita escrita e esse método é conhecido como *Syntactic Sugar*.
+Mas não paramos por aqui, temos uma forma ainda mais simples quando queremos efetuar um incremento no valor 1.
+
+**Ex3:**
+
+    //Esse é o Syntactic Sugar para incrementar 1
+    number++;
+
+podemos ver que exemplo acima escrevemos de uma forma ainda mais simples do quea do *Ex2* reduzindo a escrita e facilitando ainda mais a vida de todos nós meros programadores.
