@@ -5,11 +5,11 @@ int main(void)
 {
     char option = get_char("Do you agree this therms? [y/n] ");
 
-    if (option == 'y')
+    if (option == 'y' || option == 'Y')
     {
         printf("Agreed.\n");
     }
-    else if (option == 'n')
+    else if (option == 'n' || option == 'N')
     {
         printf("Not agreed.\n");
     }
