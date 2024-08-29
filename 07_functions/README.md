@@ -41,4 +41,4 @@ E podem existir variações um dos dois primeiros juntamente com um dos dois ult
         counter(5);
     }
 
-Nosso código executara uma conta de 0 até 5 graças ao nosso laço for que será executado dentro da função.
+Nosso código executará uma conta de 0 até 5 graças ao nosso laço for que será executado dentro da função.
