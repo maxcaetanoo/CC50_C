@@ -43,6 +43,30 @@ E podem existir variações um dos dois primeiros juntamente com um dos dois ult
 
 Nosso código executará uma conta de 0 até 5 graças ao nosso laço for que será executado dentro da função.
 
+**EX3:**
+
+    //Essa é uma função sem parâmetros para execução e com retorno
+    int positive_integer(void)
+    {
+        int n;
+
+        do
+        {
+            n = get_int("Enter a positive number: ");
+        }
+        while(n < 1);
+
+        return n;
+    }
+
+    int main(void)
+    {
+        //Aqui efetuamos a execução
+        int number = positive_integer();
+
+        printf("This number is positive: %i", number);
+    }
+
 ## Prototype
 
 Os prototipos são uma forma de garantir para o programa que existirá uma função já que os códigos são lidos da direira para a esquerda e de cima para baixo precisamos garantir que funções criadas abaixo do codigo **main** estejam descritas acima assim teremos a certeza que nosso programa conseguirar encontrar a mesma.
